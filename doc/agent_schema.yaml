@@ -1,0 +1,23 @@
+# ActorCrate Agent Schema (YAML)
+# This schema defines the structure for agent definitions in ActorCrate.
+# Fields are annotated with comments for clarity and future extensibility.
+
+agent_id: "example_agent"           # Unique identifier for the agent
+name: "Example Agent"               # Human-readable name
+traits:                             # Personality and behavioral traits (0.0-1.0 scale)
+  extraversion: 0.50                # Example: sociability
+  cynicism: 0.10                    # Example: skepticism
+  trauma: 0.30                      # Example: past adversity
+  agreeableness: 0.80               # Example: cooperativeness
+  # Add additional traits as needed
+corpus_sources:                     # List of source documents or datasets
+  - "Example Speech Transcript"
+  - "Example Interview"
+consent_status: "public_figure"     # Consent or provenance status (e.g., public_figure, user_consent, restricted)
+speculation_allowed: false          # Whether speculative inference is permitted
+
+# ---
+# Extend with additional fields as needed:
+# - affiliations: ["Org1", "Org2"]
+# - roles: ["Leader", "Activist"]
+# - metadata: {birth_year: 1900, nationality: "Exampleland"}
